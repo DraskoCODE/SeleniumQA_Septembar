@@ -1,5 +1,6 @@
 package loginTest;
 
+import helper.DriverPath;
 import org.example.Locators;
 import org.example.Url;
 import org.openqa.selenium.By;
@@ -14,7 +15,7 @@ public class VerifyLoginWithoutUsername {
         //final String urlLoginPage = "https://www.saucedemo.com/";
         final String urlProductsPage = "https://www.saucedemo.com/inventory.html";
 
-        System.setProperty("webdriver.chrome.driver", "D:\\Driver\\chromedriver.exe");
+        System.setProperty("webdriver.chrome.driver", DriverPath.chromeDriverPath);
         ChromeDriver driver = new ChromeDriver();
         driver.get(Url.urlLoginPage);
 
