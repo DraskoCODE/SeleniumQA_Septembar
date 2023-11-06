@@ -19,7 +19,7 @@ public class LoginTests {
 
     @Test(dataProvider = "user-data")
     public void verifyLoginDataProviderOnChrome(String userName, String password, String url) {
-        System.setProperty("webdriver.chrome.driver", "D:\\Driver\\chromedriver.exe");
+
         ChromeDriver driver = new ChromeDriver();
 
         LoginPage loginPage = new LoginPage(driver);
