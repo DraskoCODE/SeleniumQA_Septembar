@@ -142,7 +142,7 @@ public class ProductsTests {
         List<Product> products = productsPage.returnProducts();
 
         Assert.assertTrue(ListManager.isListSortedAsc(productsPage.getPrices(products)), "Prices are not sort as expected");
-
+        System.out.println("TEST");
         productsPage.closePage();
     }
 
